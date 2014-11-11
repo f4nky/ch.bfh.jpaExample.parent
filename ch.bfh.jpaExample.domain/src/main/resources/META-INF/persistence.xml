@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="ch.bfh.funkyCoders.taskList.domain">
+        <!-- Alle Entity-Klassen des Projektes hier einfügen -->
+        <class>ch.bfh.jpaExample.model.Project</class>
+        <class>ch.bfh.jpaExample.model.Task</class>
+
+        <!-- Datenbank-Konfiguration -->
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/jpaExampleDB"/> <!-- DB-Name hier anpassen -->
+            <property name="javax.persistence.jdbc.user" value="user"/> <!-- DB-User eintragen -->
+            <property name="javax.persistence.jdbc.password" value="pwd"/> <!-- Passwort eintragen -->
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+
+
