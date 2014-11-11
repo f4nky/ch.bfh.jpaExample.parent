@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
 
-    <persistence-unit name="ch.bfh.funkyCoders.taskList.domain">
+    <persistence-unit name="ch.bfh.jpaExample.domain">
         <!-- Alle Entity-Klassen des Projektes hier einfügen -->
         <class>ch.bfh.jpaExample.model.Project</class>
         <class>ch.bfh.jpaExample.model.Task</class>
